@@ -1,0 +1,173 @@
+{\rtf1\ansi\ansicpg936\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 ================================ START TEST CHECK MIC1 EXIST (Item293) ================================\
+[2016-02-22 09:48:49.249](Clear Buffer ==> [MOBILE]):\
+\
+[2016-02-22 09:48:49.249](TX ==> [MOBILE]):smokey --run MicTempTest;cbcolor\
+[2016-02-22 09:48:51.251](RX ==> [MOBILE]):smokey --run MicTempTest;cbcolor\
+\
+Smokey 24C198 (commit a359e2e) 2016/02/18 18:57:24\
+D10 master 24C198 (revision a359e2e) 2016/02/18 18:57:51\
+\
+SrNm: C7CR300XH2FQ\
+MLB#: C7H5524001PGXD6JN\
+CFG#: D10/P2.5-MINI/5S8TDT/00005/2M4BVT/00173\
+ECID: 001A394A20A2E626\
+\
+Control File:   nandfs:\\AppleInternal\\Diags\\Logs\\Smokey\\MicTempTest\\D10\\Main.plist\
+Script File:    nandfs:\\AppleInternal\\Diags\\Logs\\Smokey\\MicTempTest\\D10\\Main.lua\
+Log File:       nandfs:\\AppleInternal\\Diags\\Logs\\Smokey\\MicTempTest\\Smokey.log\
+Results File:   nandfs:\\AppleInternal\\Diags\\Logs\\Smokey\\MicTempTest\\PDCA.plist\
+Signature File: undefined\
+Control Bit:    none\
+\
+SequenceName:          Mic_Test\
+SequenceVersion:       20151208\
+BehaviorOnFail:        KeepGoing\
+ResultsBehavior:       NoFile\
+ResultsActionBehavior: NoAction\
+ResultsAction:         undefined\
+LogBehavior:           ConsoleOnly\
+LogFileBuffering:      WriteThrough\
+BrickRequired:         None\
+LogCollectorControl:   None\
+ControlBitAccess:      Default\
+\
+Sequence syntax and sanity check passed\
+\
+Writing default results\
+Skipping control bit write\
+Skipping PDCA plist write\
+\
+Initializing display\
+Continuing without charger\
+Device ready\
+\
+Sequence execution...\
+\
+Day/Time      Node\
+------------- ----\
+[22 09:48:50] N001 Repeating 1x\
+[22 09:48:50] .... 	[1] Periodic tasks\
+[22 09:48:50] N002 	[1] Repeating 1x "mic_test"\
+[22 09:48:50] .... 		[1] Action "mic_test"\
+[22 09:48:50] .... 			audio -r\
+------------------------------------------------------------------------------\
+:-) audio -r\
+Resetting arc...\
+Resetting audmux...\
+Resetting baseband...\
+Resetting bluetooth...\
+Resetting botspeaker...\
+Resetting codec...\
+Resetting fpga...\
+Resetting mikeybus...\
+Resetting socmca...\
+Resetting topspeaker...\
+OK\
+------------------------------------------------------------------------------\
+[22 09:48:50] .... 			Exit code = 0x00000000\
+[22 09:48:50] .... 			routeaudio -b codec -r -i ain1 -o hp\
+------------------------------------------------------------------------------\
+:-) routeaudio -b codec -r -i ain1 -o hp\
+Routing from codec.ain1[l] --> codec.hp[1:0]\
+OK\
+------------------------------------------------------------------------------\
+[22 09:48:50] .... 			Exit code = 0x00000000\
+[22 09:48:50] .... 			i2c -s 4\
+------------------------------------------------------------------------------\
+:-) i2c -s 4\
+Sweeping bus 4\
+Bus 4 IC exists at Address: (7-bit) 0x0 (8-bit) 0x0\
+Bus 4 IC exists at Address: (7-bit) 0x27 (8-bit) 0x4E\
+Bus 4 IC exists at Address: (7-bit) 0x2C (8-bit) 0x58\
+Bus 4 IC exists at Address: (7-bit) 0x40 (8-bit) 0x80\
+Bus 4 IC exists at Address: (7-bit) 0x41 (8-bit) 0x82\
+Bus 4 IC exists at Address: (7-bit) 0x51 (8-bit) 0xA2\
+Bus 4 IC exists at Address: (7-bit) 0x58 (8-bit) 0xB0\
+Bus 4 IC exists at Address: (7-bit) 0x61 (8-bit) 0xC2\
+------------------------------------------------------------------------------\
+[22 09:48:51] .... 			Exit code = 0x00000000\
+[22 09:48:51] .... 			audio -r\
+------------------------------------------------------------------------------\
+:-) audio -r\
+Resetting arc...\
+Resetting audmux...\
+Resetting baseband...\
+Resetting bluetooth...\
+Resetting botspeaker...\
+Resetting codec...\
+Resetting fpga...\
+Resetting mikeybus...\
+Resetting socmca...\
+Resetting topspeaker...\
+OK\
+------------------------------------------------------------------------------\
+[22 09:48:51] .... 			Exit code = 0x00000000\
+[22 09:48:51] .... 			routeaudio -b codec -r -i ain4 -o hp\
+------------------------------------------------------------------------------\
+:-) routeaudio -b codec -r -i ain4 -o hp\
+Routing from codec.ain4[l] --> codec.hp[1:0]\
+OK\
+------------------------------------------------------------------------------\
+[22 09:48:51] .... 			Exit code = 0x00000000\
+[22 09:48:51] .... 			i2c -s 4\
+------------------------------------------------------------------------------\
+:-) i2c -s 4\
+Sweeping bus 4\
+Bus 4 IC exists at Address: (7-bit) 0x0 (8-bit) 0x0\
+Bus 4 IC exists at Address: (7-bit) 0x27 (8-bit) 0x4E\
+Bus 4 IC exists at Address: (7-bit) 0x2C (8-bit) 0x58\
+Bus 4 IC exists at Address: (7-bit) 0x40 (8-bit) 0x80\
+Bus 4 IC exists at Address: (7-bit) 0x41 (8-bit) 0x82\
+Bus 4 IC exists at Address: (7-bit) 0x51 (8-bit) 0xA2\
+Bus 4 IC exists at Address: (7-bit) 0x56 (8-bit) 0xAC\
+Bus 4 IC exists at Address: (7-bit) 0x58 (8-bit) 0xB0\
+Bus 4 IC exists at Address: (7-bit) 0x61 (8-bit) 0xC2\
+------------------------------------------------------------------------------\
+[22 09:48:51] .... 			Exit code = 0x00000000\
+[22 09:48:51] .... 			i2c --devread 4 0x56 0x00 1\
+------------------------------------------------------------------------------\
+:-) i2c --devread 4 0x56 0x00 1\
+Reading 1 bytes from register offset 0x00 into 0x79C8E518, buffer read:	\
+Data:  0x21 \
+------------------------------------------------------------------------------\
+[22 09:48:51] .... 			Exit code = 0x00000000\
+[22 09:48:51] .... 			temperature --dev mic\
+------------------------------------------------------------------------------\
+:-) temperature --dev mic\
+Device: mic\
+	MIC1\
+	    Instant: 26.82 deg C\
+	MIC3\
+	    Instant: 26.81 deg C\
+------------------------------------------------------------------------------\
+[22 09:48:51] .... 			Exit code = 0x00000000\
+MIC1_temp_dock	nil\
+MIC3_temp_forehead	26.81\
+MIC1_dock_vendor	nil\
+MIC3_forehead_vendor	0x21\
+MIC1 Exist: 	No\
+MIC3 Exist: 	Yes\
+[22 09:48:51] N001 Sequence done\
+\
+Passed\
+\
+Writing final results\
+Skipping control bit write\
+Skipping PDCA plist write\
+\
+Setting Screen Color based on iPX Control Bits:\
+[001A394A:20A2E626] :-) \
+\
+Item Name:Check MIC1 Exist, \{NA\}\
+================================ START TEST CHECK MIC3 EXIST (Item296) ================================\
+Item Name:Check MIC3 Exist, \{NA\}\
+============================= START TEST MIC3 TEMP VENDOR CHECK (Item297) =============================\
+Item Name:MIC3 Temp Vendor Check, <0x00,0x21,0x40>\
+================================ START TEST MIC3 TEMPERATURE (Item298) ================================\
+Item Name:MIC3 Temperature, [10,50]}
